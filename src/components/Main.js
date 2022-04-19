@@ -1,11 +1,14 @@
 import React from 'react'
 import MyNavbar from './MyNavbar'
-import { Container } from 'react-bootstrap'
 import Footer from './Footer'
+import About from './About'
+import '../App.css'
+
 function Main() {
     return (
-        <div>
+        <div className='app'>
             <MyNavbar />
+            <About />
             <Footer />
         </div>
 
