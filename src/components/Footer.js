@@ -1,19 +1,20 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
-const About = () => {
+const Footer = () => {
     return (
-        <Container>
+        <Container fluid>
             <Row>
                 <Col>
-                </Col>
+                    {/* {links} */}
 
+                </Col>
                 <Col>
+                    {/* {social media} */}
                 </Col>
-
             </Row>
         </Container>
     )
 }
 
-export default About
+export default Footer
