@@ -5,7 +5,8 @@ import '../App.css'
 
 const MyNavbar = () => {
     return (
-        <Navbar variant="dark" className='cxCss'>
+
+        <Navbar variant="dark" className='cxCss' sticky='top'>
             <Container >
                 <Navbar.Brand
                     href="#home"

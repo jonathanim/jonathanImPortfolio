@@ -11,6 +11,28 @@ font-family: 'Londrina Outline', cursive;
     box-sizing: border-box;
 }
 
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Arapey', serif;
+    border-radius: 15px;
+    ;
+}
+
+
+
+.about-container {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+}
+
 .h1-about {
     font-size: 8rem;
     font-weight: bold;
@@ -25,20 +47,21 @@ font-family: 'Londrina Outline', cursive;
     font-family: 'Arapey', serif;
 }
 
-.h3-about {
-    font-size: 1.3rem;
-    color: white;
-    font-family: 'Arapey', serif;
-}
-
-
 .cxCss {
-    border-bottom: 1px solid white;
-    margin-bottom: 30px;
-
-
+    border-bottom: 2px solid white;
+    background: #000;
 }
 
-.app {
-    background-color: black;
+
+.skills-container {
+    min-height: 90vh;
+    background: rgba(240, 191, 76);
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    justify-items: center;
+    /* align-items: center; */
+    text-align: center;
+    padding: 20px 20px;
+    color: black;
 }
