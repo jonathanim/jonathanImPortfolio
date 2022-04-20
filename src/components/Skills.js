@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card, Badge } from 'react-bootstrap'
 
 const Skills = () => {
 
@@ -9,29 +9,26 @@ const Skills = () => {
         "Node.js", "MongoDB", "MySQL"]
 
     return (
-        <Container className='skills-container' >
+        <Container fluid className='skills-container' >
             <Row>
                 <h3>
                     Skills
                 </h3>
             </Row>
             <Row>
-                <Col>
-                    {skills.map(skill => {
-                        return <Card pill className='cx-pill'>
+
+                {skills.map(skill => {
+
+                    return <Col>
+                        <Badge pill className='cx-pill'>
                             {skill}
-                        </Card>
+                        </Badge>
+                    </Col>
+                })}
 
-                    })}
 
-                </Col>
             </Row>
-            <Row>
-                <Col>
-                </Col>
-                <Col>
-                </Col>
-            </Row>
+
         </Container >
     )
 }

@@ -35,13 +35,13 @@ h3 {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 3s linear infinite;
     display: inline-block;
     font-size: 2rem;
     font-weight: bold;
+    padding-left: 5px;
 }
 
 @keyframes textclip {
@@ -116,11 +116,11 @@ h3 {
 
 /* Skills CSS */
 
-x .skills-container {
+.skills-container {
     min-height: 90vh;
     background: rgba(240, 191, 76);
     display: flex;
-    margin: 30px auto;
+    border-top: 3px solid white;
     justify-content: center;
     justify-items: center;
     /* align-items: center; */
