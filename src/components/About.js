@@ -4,7 +4,7 @@ import '../App.css'
 
 const About = () => {
     return (
-        <Container className="about-container">
+        <Container fluid className="about-container">
             <Row>
                 <Col>
                     <h2 className='h2-about'>

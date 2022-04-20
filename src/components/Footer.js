@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-dom'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -8,6 +8,8 @@ const Footer = () => {
             <Row>
                 <Col>
                     {/* {links} */}
+                    <Link to="/" >Link one</Link>
+                    <Link to="/" >Link one</Link>
                     <Link to="/" >Link one</Link>
                 </Col>
                 <Col>

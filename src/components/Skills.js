@@ -1,8 +1,12 @@
 import React from 'react'
 import '../App.css'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 
 const Skills = () => {
+
+    const skills = [
+        "Javascript", "HTML", "CSS", "React", "React Native", "Redux", "Express.js",
+        "Node.js", "MongoDB", "MySQL"]
 
     return (
         <Container className='skills-container' >
@@ -13,8 +17,13 @@ const Skills = () => {
             </Row>
             <Row>
                 <Col>
-                </Col>
-                <Col>
+                    {skills.map(skill => {
+                        return <Card pill className='cx-pill'>
+                            {skill}
+                        </Card>
+
+                    })}
+
                 </Col>
             </Row>
             <Row>

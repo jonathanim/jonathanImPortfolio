@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import '../App.css'
 
 
@@ -8,16 +9,11 @@ const MyNavbar = () => {
 
         <Navbar variant="dark" className='cxCss' sticky='top'>
             <Container >
-                <Navbar.Brand
-                    href="#home"
-                    style={{ color: "aquamarine", fontSize: "30px", letterSpacing: "10px", border: "2px solid aquamarine", padding: "10px 15px" }}
-                >
-                    JI
-                </Navbar.Brand>
+                <Link to="/home" className="animate-character">Jonathan Im</Link>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#projects">Projects</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Link className="cx-nav-links" to="/about">About</Link>
+                    <Link className="cx-nav-links" to="/projects">Projects</Link>
+                    <Link className="cx-nav-links" to="/contact">Contact</Link>
                 </Nav>
             </Container>
         </Navbar>
