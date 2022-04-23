@@ -3,8 +3,9 @@ import MyNavbar from './MyNavbar'
 import Footer from './Footer'
 import About from './About'
 import Skills from './Skills'
-
+import Projects from './Projects'
 import '../App.css'
+
 
 
 function Main() {
@@ -12,8 +13,8 @@ function Main() {
         <div className='app'>
             <MyNavbar />
             <About />
+            <Projects />
             <Skills />
-            <Footer />
         </div>
 
     )

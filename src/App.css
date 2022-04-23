@@ -25,19 +25,18 @@ h3 {
 .animate-character {
     background-image: linear-gradient(-225deg,
             white 0%,
-            aquamarine 19%,
-            black 25%,
-            aquamarine 30%,
-            white 85%,
-            aquamarine 100%);
+            aquamarine 25%,
+            rgb(217, 100, 217) 50%,
+            rgb(255, 192, 76) 85%,
+            white 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
-    color: #fff;
+    color: black;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
+    animation: textclip 5s linear infinite;
     display: inline-block;
     font-size: 2rem;
     font-weight: bold;
@@ -51,14 +50,15 @@ h3 {
 }
 
 
+
 .cxCss {
-    border-bottom: 2px solid white;
     background: #000;
+    border-bottom: 2px solid rgb(255, 192, 76);
 }
 
 
 .cx-nav-links {
-    color: aquamarine;
+    color: rgb(255, 192, 76);
     box-shadow: inset 0 0 0 0 white;
     margin: 0 -.25rem;
     padding: 0 .25rem;
@@ -79,7 +79,7 @@ h3 {
     letter-spacing: 5px;
     font-family: 'Arapey', serif;
     font-weight: bold;
-    box-shadow: inset 180px 0 0 0 aquamarine;
+    box-shadow: inset 200px 0 0 0 rgb(255, 192, 76);
     color: black;
 }
 
@@ -115,16 +115,30 @@ h3 {
 
 
 /* Skills CSS */
-
 .skills-container {
     min-height: 90vh;
-    background: rgba(240, 191, 76);
-    display: flex;
-    border-top: 3px solid white;
-    justify-content: center;
-    justify-items: center;
-    /* align-items: center; */
+    background: black;
+    color: white;
+    align-items: center;
     text-align: center;
     padding: 20px 20px;
+}
+
+.projects-container {
+    min-height: 50vh;
+    background: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.cx-card {
+    display: inline-block;
     color: black;
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    border: 5px solid rgb(255, 192, 76);
+    margin: 20px;
 }
