@@ -20,9 +20,12 @@ const About = () => {
                                 <h1 className='h1-about animate-character'>
                                     <span style={{ color: "aquamarine" }}>J</span>onathan<span style={{ color: "aquamarine" }}> I</span>m
                                 </h1>
-                                <h2 className='h2-about '>
-                                    Front End Developer  <span className='devEmoji'>👨🏻‍💻</span>
-                                </h2>
+                                <div class="typewriter">
+                                    <h2 className='h2-about'>
+                                        Front End Developer  <span className='devEmoji'>👨🏻‍💻</span>
+                                    </h2>
+                                </div>
+
                                 <div>
                                     <Row>
                                         <Col><Button>hi</Button></Col>
