@@ -1,4 +1,5 @@
 import React from 'react'
+import { Col } from 'react-bootstrap'
 
 const CxPills = ({ text, bg, color, border }) => {
     const styles = {
@@ -15,11 +16,13 @@ const CxPills = ({ text, bg, color, border }) => {
     }
 
     return (
-        <div style={styles}>
-            <h4>
-                {text}
-            </h4>
-        </div>
+        <Col>
+            <div style={styles}>
+                <h4>
+                    {text}
+                </h4>
+            </div>
+        </Col>
     )
 }
 

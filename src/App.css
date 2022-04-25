@@ -89,6 +89,7 @@ h3 {
 
 .about-container {
     min-height: 100vh;
+    max-height: fit-content;
     background: black;
     display: flex;
     justify-content: center;
@@ -155,10 +156,11 @@ h3 {
     font-family: 'Londrina Outline', cursive;
 }
 
-.h2-about {
+.h2-all {
+    color: white;
+    text-align: center;
     font-weight: bold;
     font-size: 4rem;
-    color: white;
     font-family: 'Arapey', serif;
 }
 
@@ -166,7 +168,6 @@ h3 {
 
 /* Skills CSS */
 .skills-container {
-    min-height: 90vh;
     background: black;
     color: white;
     align-items: center;
@@ -191,4 +192,17 @@ h3 {
     padding: 20px;
     border: 5px solid rgb(255, 192, 76);
     margin: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .h2-about {
+        font-size: 2rem;
+    }
+
+    .h1-about {
+        font-size: 4rem;
+    }
+
+
 }
