@@ -2,7 +2,6 @@ import React from 'react'
 import MyNavbar from './MyNavbar'
 import Footer from './Footer'
 import About from './About'
-import Skills from './Skills'
 import Projects from './Projects'
 import '../App.css'
 import Contact from './Contact'
@@ -17,7 +16,6 @@ function Main() {
             <About />
             <MyStack />
             <Projects />
-            <Skills />
         </div>
 
     )

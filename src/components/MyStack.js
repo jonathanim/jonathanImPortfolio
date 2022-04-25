@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import '../components/subcomponents/myStack.css'
+import './myStack.css'
 import { FaReact } from 'react-icons/fa'
 import { TiHtml5 } from 'react-icons/ti'
 import { SiCss3, SiRubyonrails, SiRedux, SiExpress, SiNodedotjs, SiMongodb } from 'react-icons/si'
@@ -14,10 +14,12 @@ const MyStack = () => {
     return (
 
 
-        <Container style={{ minHeight: "100vh" }}>
+        <Container fluid style={{
+            minHeight: "100vh"
+        }}>
             <Row>
-                <h2 className='h2-skill'>Toolkit</h2>
-            </Row>
+                < h2 className='h2-skill'>Toolkit</h2>
+            </Row >
             <Row>
                 <Col >
                     <div className="skill-card-section">

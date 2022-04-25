@@ -7,7 +7,7 @@ import '../App.css'
 const MyNavbar = () => {
     return (
 
-        <Navbar variant="dark" className='cxCss' sticky="top" >
+        <Navbar variant="dark" className='cxCss' >
             <Container >
                 <Nav className="mx-auto">
                     <Link className="cx-nav-links " to="/about">HOME</Link>
