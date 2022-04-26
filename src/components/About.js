@@ -17,7 +17,7 @@ const About = () => {
                                 <h1 className='h1-about animate-character'>
                                     <span style={{ color: "aquamarine" }}>J</span>onathan<span style={{ color: "aquamarine" }}> I</span>m
                                 </h1>
-                                <div class="typewriter">
+                                <div className="typewriter">
                                     <h2 className='h2-all'>
                                         A Full-Stack Engineer  <span className='devEmoji'>👨🏻‍💻</span>
                                     </h2>

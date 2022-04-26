@@ -30,8 +30,8 @@ const Projects = () => {
 
                     {data.map((project, i) => {
                         return (
-                            <div style={{ border: "1px solid white", display: "inline-block", margin: "10px" }}>
-                                <CxCard project={project} key={i} />
+                            <div style={{ border: "1px solid white", display: "inline-block", margin: "10px" }} key={i}>
+                                <CxCard project={project} />
                             </div>
                         )
                     })}

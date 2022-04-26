@@ -1,0 +1,42 @@
+.footer {
+    bottom: 0;
+    width: 100vw;
+    height: 300px;
+    border-top: 3px solid orange;
+    padding-top: 10px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.footer-link {
+    color: orange;
+    text-decoration: none;
+    padding: 5px;
+    transition: .3s ease-in;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: white;
+}
+
+.footer .form-control {
+    background-color: white;
+    box-shadow: 4px 3px 0 0 gray;
+    resize: none;
+    color: black;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+#emailInput {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#messageInput {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}

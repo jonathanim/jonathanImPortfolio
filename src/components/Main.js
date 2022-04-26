@@ -5,7 +5,6 @@ import Footer from './Footer'
 import About from './About'
 import Projects from './Projects'
 import '../App.css'
-import Contact from './Contact'
 import MyStack from './MyStack'
 
 
@@ -17,6 +16,7 @@ function Main() {
             <About />
             <MyStack />
             <Projects />
+            <Footer />
         </div>
     )
 }
