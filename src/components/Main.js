@@ -1,4 +1,5 @@
 import React from 'react'
+
 import MyNavbar from './MyNavbar'
 import Footer from './Footer'
 import About from './About'
@@ -17,7 +18,6 @@ function Main() {
             <MyStack />
             <Projects />
         </div>
-
     )
 }
 

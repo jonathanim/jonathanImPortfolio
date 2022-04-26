@@ -1,13 +1,12 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Animator, ScrollContainer, ScrollPage, batch, FadeIn, MoveIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, FadeIn, MoveIn } from "react-scroll-motion";
 
 import '../App.css'
 
 
 const Contact = () => {
     return (
-
         <ScrollContainer>
             <ScrollPage page={3}>
                 <Container fluid className='about-container' >
@@ -20,7 +19,9 @@ const Contact = () => {
                             </Col>
                         </Row>
                         <Row>
+                            <div className='form'>
 
+                            </div>
                         </Row>
                     </Animator>
                 </Container >

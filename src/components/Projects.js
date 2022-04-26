@@ -26,14 +26,16 @@ const Projects = () => {
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <div>
-                        {data.map((project, i) => {
-                            return (
+                <Col >
+
+                    {data.map((project, i) => {
+                        return (
+                            <div style={{ border: "1px solid white", display: "inline-block", margin: "10px" }}>
                                 <CxCard project={project} key={i} />
-                            )
-                        })}
-                    </div>
+                            </div>
+                        )
+                    })}
+
                 </Col>
 
             </Row>
