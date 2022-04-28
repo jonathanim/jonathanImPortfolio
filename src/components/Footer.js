@@ -1,15 +1,51 @@
-import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './footer.css'
 
+
+
 const Footer = () => {
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
 
+
+    const isValidEmail = email => {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regex.test(String(email).toLowerCase());
+    };
+    const submit = () => {
+        if (name != "" && isValidEmail(email) && message != "") {
+            const serviceId = 'service_9twbrfc';
+            const templateId = 'template_qqz33ps';
+            const userId = 'user_nhGwTflhvgRhjhYBiGpvo';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+            alert("Thank you for the message.")
+        } else {
+            alert('Please input correct email and message.');
+        }
+    }
 
     return (
         <footer className="footer">
-            <Container className="mt-5">
+            <Container className="mt-3">
                 <Row>
                     <Col md={5}>
                         <h5><i className="mt-5"></i> Jonathan Im</h5>
@@ -31,21 +67,22 @@ const Footer = () => {
                         <hr />
                     </Col>
                     <Col md={5}>
-                        <form>
+                        <div id="contact-form" style={{ textAlign: "center" }}>
                             <div className="form-group">
-                                <input type="email" className="form-control" id="emailInput" placeholder="Enter email" />
+                                <input type="text" className="form-control" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
                             </div>
                             <div className="form-group">
-                                <textarea className="form-control" id="messageInput" placeholder="Message"></textarea>
+                                <input type="email" className="form-control" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
                             </div>
-                            <div className="form-group text-center mt-4">
-                                <Button type="submit" variant="primary btn btn-lg">Send</Button>
+                            <div className="form-group">
+                                <textarea className="form-control" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                             </div>
-                        </form>
+                            <button className="btn-submit" onClick={submit}>Send Message</button>
+                        </div>
                     </Col>
                 </Row>
             </Container>
-        </footer>
+        </footer >
     )
 }
 

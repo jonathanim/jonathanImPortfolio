@@ -1,9 +1,8 @@
 .footer {
-    bottom: 0;
     width: 100vw;
-    height: 300px;
+    height: auto;
     border-top: 3px solid orange;
-    padding-top: 10px;
+    padding: 20px;
     background-color: black;
     color: rgb(255, 255, 255);
 }
@@ -12,7 +11,7 @@
     color: orange;
     text-decoration: none;
     padding: 5px;
-    transition: .3s ease-in;
+    transition: .4s ease-in;
 }
 
 .footer-link:hover,
@@ -23,20 +22,15 @@
 .footer .form-control {
     background-color: white;
     box-shadow: 4px 3px 0 0 gray;
-    resize: none;
     color: black;
     padding: 10px 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
-#emailInput {
-    color: black;
+.btn-submit {
+    text-align: center;
     padding: 5px;
-    font-size: 20px;
-}
-
-#messageInput {
-    color: black;
-    padding: 5px;
-    font-size: 20px;
+    background-color: #1f79ff;
+    color: white;
+    ;
 }

@@ -14,7 +14,7 @@ const MyStack = () => {
     return (
 
 
-        <Container fluid style={{
+        <Container style={{
             minHeight: "100vh"
         }}>
             <Row>
