@@ -17,10 +17,10 @@ const Projects = () => {
 
     return (
 
-        <Container fluid className='projects-container' style={{ minHeight: "100vh" }}>
+        <Container className='projects-container' style={{ margin: "50px auto" }} id={"projects"}>
             <Row >
                 <Col>
-                    < h2 className='h2-all' style={{ color: 'white', marginTop: "150px", marginBottom: "50px" }} id={"projects"}>
+                    < h2 className='h2-all' style={{ color: 'white', marginTop: "150px", marginBottom: "50px" }}>
                         Projects
                     </h2>
                 </Col>

@@ -1,21 +1,21 @@
 .projects-container {
-    min-height: 50vh;
     background: black;
     color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px;
+    box-shadow: 20px 20px gray;
 
 }
 
 .cx-card {
     color: black;
     background-color: rgb(219, 213, 213);
-    width: 400px;
-    height: 380px;
-    padding: 10px;
-    margin: 30px;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: 50px;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 0px gray;
     transition: 1.5s all;
@@ -23,7 +23,7 @@
 }
 
 .cx-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 

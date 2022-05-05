@@ -14,11 +14,10 @@ const MyStack = () => {
     return (
 
 
-        <Container style={{
-            minHeight: "100vh"
-        }}>
+        <Container
+            id={"toolkit"}>
             <Row>
-                < h2 className='h2-skill' id={"toolkit"}>Toolkit</h2>
+                < h2 className='h2-skill' >Toolkit</h2>
             </Row >
             <Row>
                 <Col >
