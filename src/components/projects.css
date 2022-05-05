@@ -9,6 +9,26 @@
 
 }
 
+.project-a-links {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #55c2da;
+    transition: .4s ease-in-out;
+}
+
+.project-a-links:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #55c2da;
+    border-radius: 15px;
+    background-color: black;
+    border: 2px solid #55c2da;
+}
+
 .cx-card {
     color: black;
     background-color: rgb(219, 213, 213);
@@ -18,13 +38,8 @@
     margin: 50px;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 0px gray;
-    transition: 1.5s all;
-
 }
 
-.cx-card:hover {
-    transform: scale(1.05);
-}
 
 
 .cx-card-image img {

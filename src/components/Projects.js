@@ -58,7 +58,7 @@ const CxCard = ({ project, i }) => {
                 <p>{project.description}</p>
             </div>
             <p>({project.stack})</p>
-            <a href={`${project.url}`} target="_blank" rel="noreferrer">View Here</a>
+            <a href={`${project.url}`} className="project-a-links" target="_blank" rel="noreferrer">View Here</a>
         </div>
     )
 }
