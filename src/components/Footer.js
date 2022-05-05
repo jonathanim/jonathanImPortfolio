@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import './footer.css'
 
 
@@ -18,8 +18,9 @@ const Footer = () => {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(String(email).toLowerCase());
     };
+
     const submit = () => {
-        if (name != "" && isValidEmail(email) && message != "") {
+        if (name !== "" && isValidEmail(email) && message !== "") {
             const serviceId = 'service_9twbrfc';
             const templateId = 'template_qqz33ps';
             const userId = 'user_nhGwTflhvgRhjhYBiGpvo';
@@ -44,7 +45,7 @@ const Footer = () => {
     }
 
     return (
-        <footer className="footer">
+        <footer className="footer" >
             <Container className="mt-3">
                 <Row>
                     <Col md={5}>
@@ -52,9 +53,9 @@ const Footer = () => {
                         <Row>
                             <Col sm={6}>
                                 <ul className="list-unstyled" style={{ display: "flex", flexDirection: "column" }}>
-                                    <Link to="#top" className='footer-link'>About</Link>
-                                    <Link to="#top" className='footer-link'>Projects</Link>
-                                    <Link to="#top" className='footer-link'>Skills</Link>
+                                    <HashLink to="#top" className='footer-link'>Home</HashLink>
+                                    <HashLink to="#toolkit" className='footer-link'>Toolkit</HashLink>
+                                    <HashLink to="#projects" className='footer-link'>Projects</HashLink>
                                 </ul>
                             </Col>
 
@@ -63,7 +64,7 @@ const Footer = () => {
                         <br />
                     </Col>
                     <Col md={2}>
-                        <h5 className="text-md-right">Message Me</h5>
+                        <h5 className="text-md-right" id="contact">Message Me</h5>
                         <hr />
                     </Col>
                     <Col md={5}>

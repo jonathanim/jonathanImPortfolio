@@ -24,11 +24,13 @@ h3 {
 
 .animate-character {
     background-image: linear-gradient(-225deg,
-            white 0%,
-            aquamarine 25%,
-            rgb(217, 100, 217) 50%,
+            rgb(252, 246, 71) 0%,
+            rgb(191, 255, 95) 20%,
+            rgb(102, 247, 223) 30%,
+            rgb(102, 247, 223) 50%,
+            rgb(217, 100, 217) 75%,
             rgb(255, 192, 76) 85%,
-            white 100%);
+            rgb(252, 246, 71) 0%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -36,7 +38,7 @@ h3 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 5s linear infinite;
+    animation: textclip 10s linear infinite;
     display: inline-block;
     font-size: 2rem;
     font-weight: bold;
@@ -68,7 +70,7 @@ h3 {
     letter-spacing: 5px;
     font-family: 'Arapey', serif;
     font-weight: bold;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
 
 }
 
@@ -173,6 +175,10 @@ h3 {
     align-items: center;
     text-align: center;
     padding: 20px 20px;
+}
+
+.skill-card-section {
+    border: 10px solid black;
 }
 
 .projects-container {

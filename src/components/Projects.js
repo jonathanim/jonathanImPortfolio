@@ -20,7 +20,7 @@ const Projects = () => {
         <Container fluid className='projects-container' style={{ minHeight: "100vh" }}>
             <Row >
                 <Col>
-                    < h2 className='h2-all' style={{ color: 'white', marginTop: "150px", marginBottom: "50px" }}>
+                    < h2 className='h2-all' style={{ color: 'white', marginTop: "150px", marginBottom: "50px" }} id={"projects"}>
                         Projects
                     </h2>
                 </Col>
@@ -58,7 +58,7 @@ const CxCard = ({ project, i }) => {
                 <p>{project.description}</p>
             </div>
             <p>({project.stack})</p>
-            <a href={`${project.url}`} target="_blank">View Here</a>
+            <a href={`${project.url}`} target="_blank" rel="noreferrer">View Here</a>
         </div>
     )
 }
