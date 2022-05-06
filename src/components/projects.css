@@ -12,29 +12,31 @@
 .project-a-links {
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
+    color: black;
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
-    background-color: #55c2da;
+    background-color: white;
     transition: .4s ease-in-out;
 }
 
 .project-a-links:hover {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #55c2da;
+    color: white;
     border-radius: 15px;
     background-color: black;
     border: 2px solid #55c2da;
 }
 
 .cx-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     color: black;
     background-color: rgb(219, 213, 213);
-    width: 350px;
-    height: auto;
-    padding: 20px;
+    padding: 20px auto;
     margin: 50px;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 0px gray;
@@ -48,21 +50,14 @@
     position: relative;
     height: 150px;
     width: auto;
-    margin-top: 10px;
+    margin: 10px;
     padding: 5px;
     border: 2px solid black;
     background-color: white;
 }
 
 
-
-.cx-card-description p {
-    padding: 10px;
-    margin: -10px -10px;
-}
-
 .cx-card-title {
-
     margin-top: 10px;
-
+    text-align: center;
 }

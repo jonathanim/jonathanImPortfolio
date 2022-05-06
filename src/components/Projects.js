@@ -25,19 +25,12 @@ const Projects = () => {
                     </h2>
                 </Col>
             </Row>
-            <Row>
-                <Col >
-
-                    {data.map((project, i) => {
-                        return (
-                            <div style={{ border: "1px solid white", display: "inline-block", margin: "10px" }} key={i}>
-                                <CxCard project={project} />
-                            </div>
-                        )
-                    })}
-
-                </Col>
-
+            <Row style={{ justifyContent: "space-around" }}>
+                {data.map((project, i) => {
+                    return (
+                        <CxCard project={project} key={i} />
+                    )
+                })}
             </Row>
         </Container >
 
