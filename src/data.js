@@ -1,5 +1,4 @@
 import coffee from './public/Coffee.png'
-import tindog from './public/tindog.png'
 import gymapp from './public/gymapp.png'
 import phovina from './public/phovina.png'
 import animeSearch from './public/animeSearch.png'
@@ -19,12 +18,6 @@ export const projectsData = [
         stack: "HTML, CSS",
         url: "https://coffeeshop-gg.netlify.app/",
         image: coffee
-    }, {
-        name: "Tindog",
-        description: "Dating for Puppies.",
-        stack: "HTML, CSS, jQuery",
-        url: "https://ji-tindog.netlify.app",
-        image: tindog
     }, {
         name: "Phovina Restaurant",
         description: "Restaurant website for Phovina.",

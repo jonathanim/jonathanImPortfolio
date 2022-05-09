@@ -17,7 +17,7 @@
     border: 2px solid black;
     border-radius: 15px;
     background-color: white;
-    transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .project-a-links:hover {
@@ -40,8 +40,12 @@
     margin: 50px;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 0px gray;
+    transition: 1s ease-in-out;
 }
 
+.cx-card:hover {
+    transform: scale(1.05);
+}
 
 
 .cx-card-image img {
