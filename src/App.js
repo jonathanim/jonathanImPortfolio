@@ -1,18 +1,20 @@
 import Main from './components/Main';
-import About from '../src/components/About'
-import Contact from './components/Contact'
+import AboutMe from './components/AboutMe';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import Projects from './components/Projects';
-import MyStack from './components/MyStack';
+
+
 
 function App() {
   return (
     <Router>
-      <Main />
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/aboutMe" element={<AboutMe />} />
+      </Routes>
     </Router>
   );
 }

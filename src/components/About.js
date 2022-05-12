@@ -22,6 +22,11 @@ const About = () => {
                                         A Full-Stack Engineer  <span className='devEmoji'>👨🏻‍💻</span>
                                     </h2>
                                 </div>
+                                <div className='d-flex justify-content-center mt-5'>
+
+
+
+                                </div>
                             </Animator>
                         </Col>
                     </Row>
