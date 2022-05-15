@@ -2,7 +2,7 @@ import coffee from './public/Coffee.png'
 import gymapp from './public/gymapp.png'
 import phovina from './public/phovina.png'
 import animeSearch from './public/animeSearch.png'
-
+import portfolio from './public/Portfolio-practice.png'
 
 export const projectsData = [
     {
@@ -14,16 +14,24 @@ export const projectsData = [
     },
     {
         name: "Coffee Shop",
-        description: "Coffee Restaurant mock up page",
+        description: "Coffee restaurant mock up page",
         stack: "HTML, CSS",
         url: "https://coffeeshop-gg.netlify.app/",
         image: coffee
-    }, {
+    },
+    {
         name: "Phovina Restaurant",
         description: "Restaurant website for Phovina.",
         stack: "React, Bootstrap",
         url: "https://phovina-anaheim.netlify.app/",
         image: phovina
+    },
+    {
+        name: "Portfolio Practice",
+        description: "Different style portfolio",
+        stack: "React, Bootstrap",
+        url: "https://jonathan-im-practice-portfolio.netlify.app/",
+        image: portfolio
     },
     {
         name: "Gym Mobile App",
@@ -33,7 +41,8 @@ export const projectsData = [
         image: gymapp
     },
 
-    ,
+
+
 
 
 
