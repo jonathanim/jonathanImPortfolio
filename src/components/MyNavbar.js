@@ -11,7 +11,7 @@ const MyNavbar = () => {
         <Navbar variant="dark" className='cxCss' fixed='top' id={"#top"} expand='md'>
             <Container style={{ justifyContent: "center" }}>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" style={{ display: "flex", justifyContent: "center", textAlign: "center" }}>
+                <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="mx-auto">
                         <HashLink to="#top" className="cx-nav-links">Home</HashLink>
                         <HashLink to="#toolkit" className="cx-nav-links">Toolkit</HashLink>

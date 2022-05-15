@@ -23,9 +23,6 @@ const About = () => {
                                     </h2>
                                 </div>
                                 <div className='d-flex justify-content-center mt-5'>
-
-
-
                                 </div>
                             </Animator>
                         </Col>
